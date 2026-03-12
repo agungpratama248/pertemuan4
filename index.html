@@ -1,0 +1,302 @@
+   <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum Minggu 4 - Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Konten akan kita tambahkan di sini -->
+     <!-- ── NAVBAR ─────────────────────── -->
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <span class="logo-icon">&#9670;</span>
+      <span class="logo-text">Agung</span>
+    </div>
+<button id="dark-btn" class="btn-outline">🌙</button>
+    <ul class="navbar__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+   <div class="navbar__cta">
+  <a href="https://wa.me/6281363552746" class="btn-primary">Hire Me</a>
+</div>
+  </nav>
+<!-- ── HERO SECTION ────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+    <div class="hero__content">
+      <span class="hero__badge">Available for Work</span>
+      <h1 class="hero__title">
+        Hi, saya <span class="highlight">Agung Pratama Saputra</span><br>
+        Web Developer
+      </h1>
+      <p class="hero__desc">
+      Saya adalah seorang web developer yang memiliki ketertarikan besar dalam dunia teknologi dan pengembangan website.
+      Saya berfous pada pembuatan website yang modern, responsif, dan user-friendly untuk memberikan pengalaman terbaik bagi pengguna.
+        Melalui portofolio ini, anda dapat melihat berbagai proyek, keterampilan, dan pengalaman yang telah saya kembangkan dalam bidang 
+        pemrograman dan teknologi digital.
+      </p>
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+        <a href="https://wa.me/6281363552746" class="btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+
+    <!-- FOTO PROFIL -->
+  <div class="hero__image reveal">
+  <div class="profile-air">
+    <img src="abg ganteng.jpeg" alt="Agung Pratama " class="profile-photo">
+  </div>
+</div>
+  </section>
+
+  <!-- BUTTON AIR PUTIH   -->
+  <section class="counter-section">
+  <h2>Berapa Kali Kamu Minum Air Hari Ini?</h2>
+  <div class="counter-container">
+    <button id="btn-kurang" class="counter-btn">−</button>
+    <span id="angka-counter">0</span>
+    <button id="btn-tambah" class="counter-btn">+</button>
+  </div>
+  <p id="counter-pesan">Yuk mulai minum air!</p>
+</section>
+
+  <!-- ── SKILLS SECTION ──────────────── -->
+  <section class="skills reveal" id="about">
+    <div class="container reveal">
+      <h2 class="section-title">Keahlian Saya</h2>
+      <p class="section-subtitle">Teknologi yang saya kuasai</p>
+
+      <div class="skills__grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128195;</div>
+          <h3>HTML</h3>
+          <p>Semantic markup, aksesibilitas, dan struktur dokumen yang baik.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#127912;</div>
+          <h3>CSS</h3>
+          <p>Flexbox, Grid, animasi, dan responsive design untuk semua layar.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#9889;</div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, Fetch API, dan logika interaktif modern.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128279;</div>
+          <h3>Git & GitHub</h3>
+          <p>Version control, branching, dan kolaborasi tim secara profesional.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#9881;</div>
+          <h3>React</h3>
+          <p>Component-based development dengan hooks dan state management.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">&#128640;</div>
+          <h3>Performance</h3>
+          <p>Optimasi loading, image compression, dan Core Web Vitals.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- tamanatan -->
+  <section class="education reveal" id="education">
+  <div class="container reveal">
+    <h2 class="section-title">Riwayat Pendidikan</h2>
+    <p class="section-subtitle">Perjalanan pendidikan saya</p>
+
+    <div class="education-grid reveal">
+
+      <div class="edu-card reveal">
+        <h3>Universitas Muhammadiyah Sumatera Utara</h3>
+        <p>S1 Sistem Informasi</p>
+        <span>2024 - Sekarang</span>
+      </div>
+
+      <div class="edu-card reveal">
+        <h3>SMA Negeri 3 Pematangsiantar</h3>
+        <p>Jurusan IPS</p>
+        <span>2021 - 2024</span>
+      </div>
+
+      <div class="edu-card reveal">
+        <h3>SMP Negeri 1 Pematangsiantar</h3>
+        <p>Pendidikan Menengah Pertama</p>
+        <span>2018 - 2021</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- tambahan -->
+  <!-- portofolio -->
+  <!-- ── PORTFOLIO SECTION ───────────────────── -->
+<section class="portfolio reveal" id="portfolio">
+  <div class="container">
+    <h2 class="section-title">My Portfolio</h2>
+    <p class="section-subtitle">Beberapa project yang pernah saya kerjakan</p>
+
+    <div class="portfolio__grid">
+
+      <!-- Project 1 -->
+      <div class="portfolio-card reveal">
+        <div class="portfolio-card__image">
+          <img src="project1.png" alt="Project 1">
+        </div>
+        <div class="portfolio-card__content reveal">
+          <h3>Website Calculator Application</h3>
+          <p>
+            Website Calculator Application responsif JavaScript.
+          </p>
+          <div class="portfolio-card__tags reveal">
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-card reveal">
+        <div class="portfolio-card__image reveal">
+          <img src="project2.png" alt="Project 2">
+        </div>
+        <div class="portfolio-card__content reveal">
+          <h3>Website Pendaftaran</h3>
+          <p>
+            Website Pendaftaran melalui aplikasi GUI Pyhton
+          </p>
+          <div class="portfolio-card__tags reveal">
+            <span>Pyhton</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ── CONTACT SECTION ───────────────────── -->
+<section class="contact reveal" id="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">
+      Tertarik bekerja sama? Kirim pesan dan saya akan segera membalas.
+    </p>
+
+    <div class="contact__wrapper reveal">
+
+      <!-- Contact Info -->
+      <div class="contact__info reveal">
+        <h3>Contact Information</h3>
+
+        <div class="contact__item reveal">
+          <span class="contact__icon">📍</span>
+          <div>
+            <p class="contact__label">Location</p>
+            <p>Medan, Sumatra Utara</p>
+          </div>
+        </div>
+
+        <div class="contact__item reveal">
+          <span class="contact__icon">✉️</span>
+          <div>
+            <p class="contact__label">Email</p>
+            <p></p> shikamarunar561@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact__item reveal">
+          <span class="contact__icon">📱</span>
+          <div>
+            <p class="contact__label">Phone</p>
+            <p>0813-6355-2746</p>
+          </div>
+        </div>
+
+        <div class="contact__socials reveal">
+          <a href="https://www.linkedin.com/in/agung-pratama-848453334/">LinkedIn</a>
+          <a href="https://github.com/agungpratama248">GitHub</a>
+          <a href="https://www.instagram.com/agungg_puttra/">Instagram</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact__form reveal">
+        <form id="contactForm">
+
+<div class="form-group reveal">
+<input type="text" id="nama" placeholder="Your Name">
+</div>
+
+<div class="form-group reveal">
+<input type="email" id="email" placeholder="Your Email">
+</div>
+
+<div class="form-group reveal">
+<textarea id="pesan" rows="5" placeholder="Your Message"></textarea>
+</div>
+
+<button type="submit" class="btn-primary">
+Send Message
+</button>
+
+<p id="formMessage"></p>
+
+</form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- tambahan -->
+<section class="counter-section">
+
+<h2>Statistik Project</h2>
+
+<div class="counter-container">
+
+<div class="counter-box">
+<h3 class="counter" data-target="1">0</h3>
+<p>Projects</p>
+</div>
+
+<div class="counter-box">
+<h3 class="counter" data-target="1">0</h3>
+<p>Clients</p>
+</div>
+
+<div class="counter-box">
+<h3 class="counter" data-target="1">0</h3>
+<p>Years Experience</p>
+</div>
+
+</div>
+</section>
+  <!-- ── FOOTER ──────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">&#9670; Agung</span>
+        <p class="footer__copy">
+          &copy; 2026 Agung Pratama. Dibuat dengan HTML, CSS & JavaScript murni.
+        </p>
+        <div class="footer__links">
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
